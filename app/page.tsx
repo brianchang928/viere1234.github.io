@@ -1,14 +1,15 @@
 import React from 'react';
+import Image from 'next/image';
 import { Github, Linkedin, Mail, Code, BookOpen, Briefcase } from 'lucide-react';
 
 const Portfolio = () => {
   return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <div className="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-800 to-gray-900/90">
         {/* Navigation */}
         <nav className="backdrop-blur-md bg-gray-900/30 sticky top-0 z-50 border-b border-gray-700/50">
           <div className="max-w-6xl mx-auto px-4 py-4">
             <div className="flex justify-between items-center">
-              <h1 className="text-xl font-bold text-white">Your Name</h1>
+              <h1 className="text-xl font-bold text-white">Brian Chang</h1>
               <div className="flex space-x-6">
                 <a href="#about" className="text-gray-300 hover:text-white transition-colors">About</a>
                 <a href="#projects" className="text-gray-300 hover:text-white transition-colors">Projects</a>
@@ -23,9 +24,34 @@ const Portfolio = () => {
         <section className="py-20">
           <div className="max-w-6xl mx-auto px-4">
             <div className="text-center">
-              <h1 className="text-5xl font-bold text-white mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                Aspiring Software Engineer
+              {/* Profile Image */}
+              <div className="mb-8 flex justify-center">
+                <div className="relative">
+                  <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-500/20 backdrop-blur-sm">
+                    <Image
+                        src="profile.png"
+                        alt="Brian Chang"
+                        width={128}
+                        height={128}
+                        className="w-full h-full object-cover"
+                        priority
+                    />
+                  </div>
+                  {/* Decorative ring */}
+                  <div className="absolute -inset-2 rounded-full border border-blue-500/20 animate-pulse"></div>
+                </div>
+              </div>
+
+              {/* Name with gradient text */}
+              <h1 className="text-5xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-400 text-transparent bg-clip-text">
+                Brian Chang
+              </span>
               </h1>
+
+              <h2 className="text-4xl font-bold text-white mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                Aspiring Software Engineer
+              </h2>
               <p className="text-xl text-gray-300 mb-8">
                 Building the future one line of code at a time
               </p>
@@ -82,7 +108,6 @@ const Portfolio = () => {
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Project Card 1 */}
               <div className="backdrop-blur-md bg-gray-800/30 rounded-lg p-6 border border-gray-700/50 hover:border-blue-500/50 transition-colors">
                 <h3 className="text-xl font-semibold mb-2 text-white">Personal Portfolio</h3>
                 <p className="text-gray-300 mb-4">
@@ -94,7 +119,6 @@ const Portfolio = () => {
                   <span className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm border border-blue-500/50">Tailwind</span>
                 </div>
               </div>
-              {/* Project Card 2 */}
               <div className="backdrop-blur-md bg-gray-800/30 rounded-lg p-6 border border-gray-700/50 hover:border-blue-500/50 transition-colors">
                 <h3 className="text-xl font-semibold mb-2 text-white">Future Project</h3>
                 <p className="text-gray-300 mb-4">
@@ -158,15 +182,15 @@ const Portfolio = () => {
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">Get in Touch</h2>
             <div className="flex justify-center space-x-8">
-              <a href="https://github.com/yourusername" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
+              <a href="https://github.com/viere1234" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
                 <Github className="w-6 h-6" />
                 <span>GitHub</span>
               </a>
-              <a href="https://linkedin.com/in/yourusername" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
+              <a href="https://linkedin.com/in/brian-chang-517965234" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
                 <Linkedin className="w-6 h-6" />
                 <span>LinkedIn</span>
               </a>
-              <a href="mailto:your.email@example.com" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
+              <a href="viere0928@gmail.com" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
                 <Mail className="w-6 h-6" />
                 <span>Email</span>
               </a>
@@ -178,7 +202,7 @@ const Portfolio = () => {
         <footer className="py-8">
           <div className="max-w-6xl mx-auto px-4">
             <p className="text-center text-gray-400">
-              © {new Date().getFullYear()} Your Name. All rights reserved.
+              © {new Date().getFullYear()} Brian Chang. All rights reserved.
             </p>
           </div>
         </footer>
