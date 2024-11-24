@@ -47,7 +47,7 @@ const Portfolio = () => {
             <h2 className="text-3xl font-bold text-white mb-8 text-center">About Me</h2>
             <div className="backdrop-blur-md bg-gray-800/30 p-8 rounded-lg border border-gray-700/50">
               <p className="text-gray-300 mb-6">
-                I'm an aspiring software engineer passionate about creating elegant solutions to complex problems.
+                I&apos;m an aspiring software engineer passionate about creating elegant solutions to complex problems.
                 Currently focused on learning modern web development technologies and best practices.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
