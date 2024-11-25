@@ -12,8 +12,8 @@ const Hero = () => {
                                 <Image
                                     src="profile.png"
                                     alt="Brian Chang"
-                                    width={128}
-                                    height={128}
+                                    width={256}
+                                    height={256}
                                     className="w-full h-full object-cover"
                                     priority
                                 />
@@ -23,16 +23,16 @@ const Hero = () => {
                     </div>
 
                     <h1 className="text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-400 text-transparent bg-clip-text">
-              Brian Chang
-            </span>
+                        <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-400 text-transparent bg-clip-text">
+                            Brian Chang
+                        </span>
                     </h1>
 
                     <h2 className="text-4xl font-bold text-white mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                        Aspiring Software Engineer
+                        iOS Developer
                     </h2>
                     <p className="text-xl text-gray-300 mb-8">
-                        Building the future one line of code at a time
+                        Crafting delightful mobile experiences with SwiftUI
                     </p>
                     <div className="flex justify-center space-x-4">
                         <a href="#contact" className="bg-blue-500/20 backdrop-blur-sm text-blue-300 border border-blue-500/50 px-6 py-2 rounded-lg hover:bg-blue-500/30 transition-all">
