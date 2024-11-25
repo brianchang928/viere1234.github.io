@@ -124,12 +124,12 @@ export const Education = () => {
                             {
                                 title: "Academic Excellence Award",
                                 year: "Spring 2024",
-                                description: "112學年度第二學期臺北大學資工工程學系書卷獎"
+                                description: "112學年度第二學期臺北大學資訊工程學系書卷獎"
                             },
                             {
                                 title: "Academic Excellence Award",
                                 year: "Fall 2023",
-                                description: "112學年度第一學期臺北大學資工工程學系書卷獎"
+                                description: "112學年度第一學期臺北大學資訊工程學系書卷獎"
                             },
                         ]}
                     />
@@ -142,10 +142,10 @@ export const Education = () => {
                             {
                                 title: "Information Training Club",
                                 year: "2020-2021",
-                                description: "Served as an instructor at the programming camp organized us and created test problems to evaluate learning outcomes."
+                                description: "Served as an instructor at the programming camp organized by us and created coding problems to evaluate students' learning outcomes."
                             },
                             {
-                                title: "Mathematics and Information Science Competency Competition",
+                                title: "高中數理及資訊學科能力競賽 - 資訊科",
                                 type: "contest",
                                 year: "2020",
                                 ranking: {
@@ -154,7 +154,7 @@ export const Education = () => {
                                 }
                             },
                             {
-                                title: "Mathematics and Information Science Competency Competition",
+                                title: "校內數理及資訊學科能力競賽 - 資訊科",
                                 type: "contest",
                                 year: "2019",
                                 ranking: {

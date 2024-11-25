@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Link } from 'lucide-react';
+import { GithubIcon } from '@/components/icons/GithubIcon';
 
 interface ProjectCardProps {
     title: string;
@@ -34,7 +35,7 @@ const ProjectCard = ({ title, description, technologies, githubUrl, liveUrl, ima
                     rel="noopener noreferrer"
                     className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
                 >
-                    <Github className="w-5 h-5" />
+                    <GithubIcon />
                     <span>Source Code</span>
                 </a>
             )}
@@ -56,26 +57,19 @@ const ProjectCard = ({ title, description, technologies, githubUrl, liveUrl, ima
 const Projects = () => {
     const projects = [
         {
-            title: "Health Tracking App",
-            description: "A SwiftUI-based iOS app for tracking daily health metrics, featuring HealthKit integration, custom animations, and widgets.",
-            technologies: ["SwiftUI", "HealthKit", "Core Data", "Combine"],
-            githubUrl: "https://github.com/yourusername/health-tracker",
-            imageUrl: "/projects/health-tracker.png"
+            title: "OPass iOS App",
+            description: "A SwiftUI-based iOS app for a community checkin with interactivity project (a.k.a. CCIP)",
+            technologies: ["SwiftUI", "RESTful"],
+            githubUrl: "https://github.com/CCIP-App/CCIP-iOS",
+            //imageUrl: "/projects/health-tracker.png"
         },
         {
-            title: "Weather App",
+            title: "OPass iOS App (KMP)",
             description: "Beautiful weather application with dynamic animations, location-based forecasts, and weather alerts.",
-            technologies: ["SwiftUI", "CoreLocation", "WeatherKit", "Async/Await"],
-            githubUrl: "https://github.com/yourusername/weather-app",
-            imageUrl: "/projects/weather-app.png"
+            technologies: ["SwiftUI", "KMP", "Kotlin", "Async/Await"],
+            githubUrl: "https://github.com/CCIP-App/CCIP-KMP",
+            //imageUrl: "/projects/weather-app.png"
         },
-        {
-            title: "Task Manager",
-            description: "Productivity app with iCloud sync, custom notifications, and widget support.",
-            technologies: ["SwiftUI", "CloudKit", "NotificationCenter", "WidgetKit"],
-            githubUrl: "https://github.com/yourusername/task-manager",
-            imageUrl: "/projects/task-manager.png"
-        }
     ];
 
     return (

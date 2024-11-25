@@ -1,5 +1,7 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { GithubIcon } from "@/components/icons/GithubIcon";
+import { LinkedInIcon } from "@/components/icons/LinkedInIcon";
 
 const Contact = () => {
     return (
@@ -7,15 +9,28 @@ const Contact = () => {
             <div className="max-w-6xl mx-auto px-4">
                 <h2 className="text-3xl font-bold text-white mb-8 text-center">Get in Touch</h2>
                 <div className="flex justify-center space-x-8">
-                    <a href="https://github.com/viere1234" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
-                        <Github className="w-6 h-6" />
+                    <a
+                        href="https://github.com/viere1234"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
+                    >
+                        <GithubIcon />
                         <span>GitHub</span>
                     </a>
-                    <a href="https://linkedin.com/in/brian-chang-517965234" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
-                        <Linkedin className="w-6 h-6" />
+                    <a
+                        href="https://linkedin.com/in/brian-chang-517965234"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
+                    >
+                        <LinkedInIcon />
                         <span>LinkedIn</span>
                     </a>
-                    <a href="viere0928@gmail.com" className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors">
+                    <a
+                        href="mailto:viere0928@gmail.com"
+                        className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
+                    >
                         <Mail className="w-6 h-6" />
                         <span>Email</span>
                     </a>
