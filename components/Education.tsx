@@ -1,6 +1,5 @@
 import React from 'react';
 import { BookOpen, Calendar, Award, Trophy, Medal, ChevronRight } from 'lucide-react';
-import {number} from "prop-types";
 
 interface AwardProps {
     title: string;
