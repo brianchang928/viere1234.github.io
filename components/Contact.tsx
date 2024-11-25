@@ -28,7 +28,7 @@ const Contact = () => {
                         <span>LinkedIn</span>
                     </a>
                     <a
-                        href="mailto:viere0928@gmail.com"
+                        href="mailto:me@brianchang.tw"
                         className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
                     >
                         <Mail className="w-6 h-6" />

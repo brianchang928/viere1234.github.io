@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github, Link } from 'lucide-react';
+import Image from 'next/image';
+import { Link } from 'lucide-react';
 import { GithubIcon } from '@/components/icons/GithubIcon';
 
 interface ProjectCardProps {
@@ -15,7 +16,7 @@ const ProjectCard = ({ title, description, technologies, githubUrl, liveUrl, ima
     <div className="backdrop-blur-md bg-gray-800/30 rounded-lg p-6 border border-gray-700/50 hover:border-blue-500/50 transition-colors">
         {imageUrl && (
             <div className="mb-4 rounded-lg overflow-hidden">
-                <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+                <Image src={imageUrl} alt={title} className="w-full h-48 object-cover" />
             </div>
         )}
         <h3 className="text-xl font-semibold mb-2 text-white">{title}</h3>
@@ -57,18 +58,18 @@ const ProjectCard = ({ title, description, technologies, githubUrl, liveUrl, ima
 const Projects = () => {
     const projects = [
         {
-            title: "OPass iOS App",
-            description: "A SwiftUI-based iOS app for a community checkin with interactivity project (a.k.a. CCIP)",
-            technologies: ["SwiftUI", "RESTful"],
-            githubUrl: "https://github.com/CCIP-App/CCIP-iOS",
-            //imageUrl: "/projects/health-tracker.png"
-        },
-        {
-            title: "OPass iOS App (KMP)",
-            description: "Beautiful weather application with dynamic animations, location-based forecasts, and weather alerts.",
-            technologies: ["SwiftUI", "KMP", "Kotlin", "Async/Await"],
+            title: "OPass KMP App",
+            description: "Migrate from pure native OPass app to Kotlin Multiplatform to implement data handling (network and database) just once using Kotlin while the UI is kept native (Swift for iOS, Kotlin for Android).",
+            technologies: ["KMP", "SwiftUI", "Kotlin", ],
             githubUrl: "https://github.com/CCIP-App/CCIP-KMP",
             //imageUrl: "/projects/weather-app.png"
+        },
+        {
+            title: "OPass iOS App",
+            description: "A SwiftUI-based iOS app for a community checkin with interactivity project (a.k.a. CCIP)",
+            technologies: ["SwiftUI", "RESTful", "Async/Await"],
+            githubUrl: "https://github.com/CCIP-App/CCIP-iOS",
+            //imageUrl: "/projects/health-tracker.png"
         },
     ];
 
