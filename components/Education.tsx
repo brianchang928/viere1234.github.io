@@ -122,6 +122,11 @@ export const Education = () => {
                         //description="Focused on mobile development and software engineering. Relevant coursework: iOS Development, Data Structures, Algorithms, Mobile Computing"
                         awards={[
                             {
+                                title: "Academic Excellence Award",
+                                year: "Fall 2024",
+                                description: "113學年度第ㄧ學期臺北大學資訊工程學系書卷獎"
+                            },
+                            {
                                 title: "Dean's List",
                                 year: "2024",
                                 description: "2024年臺北大學電機資訊學院院長榮譽榜"
