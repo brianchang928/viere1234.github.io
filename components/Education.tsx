@@ -122,6 +122,15 @@ export const Education = () => {
                         //description="Focused on mobile development and software engineering. Relevant coursework: iOS Development, Data Structures, Algorithms, Mobile Computing"
                         awards={[
                             {
+                                title: "Undergraduate Project Contest",
+                                description: "Our project, \"RGB-Only 3D Scene Reconstruction via Uncertainty-Aware 3D Gaussian SLAM\", won the second prize in the 2025 undergraduate project contest, Dept. of Computer Science and Information Engineering, National Taipei University",
+                                type: "contest",
+                                year: "June 2025",
+                                ranking: {
+                                    place: 2
+                                }
+                            },
+                            {
                                 title: "Academic Excellence Award",
                                 year: "Fall 2024",
                                 description: "113學年度第ㄧ學期臺北大學資訊工程學系書卷獎"
