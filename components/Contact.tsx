@@ -10,7 +10,7 @@ const Contact = () => {
                 <h2 className="text-3xl font-bold text-white mb-8 text-center">Get in Touch</h2>
                 <div className="flex justify-center space-x-8">
                     <a
-                        href="https://github.com/viere1234"
+                        href="https://github.com/brianchang928"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
@@ -19,7 +19,7 @@ const Contact = () => {
                         <span>GitHub</span>
                     </a>
                     <a
-                        href="https://linkedin.com/in/brian-chang-517965234"
+                        href="https://www.linkedin.com/in/brianchang928/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
