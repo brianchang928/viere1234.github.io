@@ -122,16 +122,6 @@ export const Education = () => {
                         //description="Focused on mobile development and software engineering. Relevant coursework: iOS Development, Data Structures, Algorithms, Mobile Computing"
                         awards={[
                             {
-                                title: "Dean's List",
-                                year: "2025",
-                                description: "2025年臺北大學電機資訊學院院長榮譽榜"
-                            },
-                            {
-                                title: "Academic Excellence Award",
-                                year: "Spring 2025",
-                                description: "113學年度第二學期臺北大學資訊工程學系書卷獎"
-                            },
-                            {
                                 title: "Undergraduate Scenior Project Contest",
                                 description: "Our project, \"RGB-Only 3D Scene Reconstruction via Uncertainty-Aware 3D Gaussian SLAM\", won the second prize in the 2025 undergraduate project contest, Dept. of Computer Science and Information Engineering, National Taipei University",
                                 type: "contest",
@@ -141,24 +131,34 @@ export const Education = () => {
                                 }
                             },
                             {
+                                title: "Dean's List",
+                                year: "2025",
+                                description: "2025年國立臺北大學電機資訊學院院長榮譽榜"
+                            },
+                            {
+                                title: "Academic Excellence Award",
+                                year: "Spring 2025",
+                                description: "113學年度第二學期國立臺北大學資訊工程學系書卷獎"
+                            },
+                            {
                                 title: "Academic Excellence Award",
                                 year: "Fall 2024",
-                                description: "113學年度第ㄧ學期臺北大學資訊工程學系書卷獎"
+                                description: "113學年度第ㄧ學期國立臺北大學資訊工程學系書卷獎"
                             },
                             {
                                 title: "Dean's List",
                                 year: "2024",
-                                description: "2024年臺北大學電機資訊學院院長榮譽榜"
+                                description: "2024年國立臺北大學電機資訊學院院長榮譽榜"
                             },
                             {
                                 title: "Academic Excellence Award",
                                 year: "Spring 2024",
-                                description: "112學年度第二學期臺北大學資訊工程學系書卷獎"
+                                description: "112學年度第二學期國立臺北大學資訊工程學系書卷獎"
                             },
                             {
                                 title: "Academic Excellence Award",
                                 year: "Fall 2023",
-                                description: "112學年度第一學期臺北大學資訊工程學系書卷獎"
+                                description: "112學年度第一學期國立臺北大學資訊工程學系書卷獎"
                             },
                         ]}
                     />
